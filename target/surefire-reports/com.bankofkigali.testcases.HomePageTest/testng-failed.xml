@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.bankofkigali.testcases.HomePageTest]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.bankofkigali.testcases.HomePageTest">
+        <methods>
+          <include name="confirmAssertCardCentre"/>
+          <include name="OpenBrowser"/>
+          <include name="confirmAssertOpenAccount"/>
+          <include name="confirmAssertGetALoan"/>
+          <include name="confirmAssertPersonalAccount"/>
+          <include name="confirmAssertGetAMortgage"/>
+          <include name="confirmAssertJointAccount"/>
+          <include name="confirmAssertSellPriceBuyPrice"/>
+        </methods>
+      </class> <!-- com.bankofkigali.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.bankofkigali.testcases.HomePageTest] -->

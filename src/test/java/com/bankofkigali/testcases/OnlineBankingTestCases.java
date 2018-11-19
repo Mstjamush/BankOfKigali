@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
@@ -24,10 +25,11 @@ public class OnlineBankingTestCases {
     @Test(priority = 1)
     public void OpenBrowser() throws InterruptedException{
         
-	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\lib\\chromedriver.exe");
-	driver = new ChromeDriver();
+	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\lib\\chromedriver.exe");
+	driver = new FirefoxDriver();
+        driver = new ChromeDriver();
 	driver.get("https://www.bk.rw/");
-	driver.manage().window().maximize();
+	//driver.manage().window().maximize();
 	Thread.sleep(1000);
 }
     
